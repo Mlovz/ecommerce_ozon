@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'GT Eesti Pro';
+  src: url('../fonts/GTEestiProDisplay-Bold.ttf');
+   font-weight: 700;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'GT Eesti Pro';
+  src: url('../fonts/GTEestiProDisplay-Medium.ttf');
+   font-weight: 500;
+   font-style: normal;
+}
+@font-face {
+  font-family: 'GT Eesti Pro';
+  src: url('../fonts/GTEestiProDisplay-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GT Eesti Pro';
+  src: url('../fonts/GTEestiProDisplay-Light.ttf');
+   font-weight: 300;
+   font-style: normal;
+}
+
+
+
+@import './sass/_config.scss';
+
+
+body {
+  margin: 0;
+  font-family: GT Eesti Pro;
+  background: linear-gradient(90deg, rgba(0,155,255,1) 10%, rgba(9,61,128,1) 100%);
+}
+
+.App {
+  width: 100%;
+}
+
+.App_wrap {
+  width: 100%;
+  border-radius: 45px;
+  background: $white;
+  padding: 80px 0;
+}
+
+.title-h1_fs {
+  margin: 40px 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 51px;
+  letter-spacing: 0.02em;
+  color: $gray_900;
+}
+
+.location_pos {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+  letter-spacing: 1px;
+  color: $gray_200;
+}
+
+.title {
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 125%;
+  letter-spacing: -1px;
+  color: $gray_900;
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.185);
+  z-index: 1;
+  svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+}
+
+.btn-create {
+  padding: 10px;
+  border: 2px solid $bluebtn;
+  background: transparent;
+  color: $bluebtn;
+  font-weight: 900;
+  transition: all .2s;
+
+  &:hover {
+    background: $bluebtn;
+    color: #fff;
+  }
+}
+
+@import './sass/components/_header.scss';
+@import './sass/components/_footer.scss';
+@import './sass/components/_login.scss';
+@import './sass/components/_show-size.scss';
+
+@import './sass/pages/home.scss';
+@import './sass/pages/_cart.scss';
+@import './sass/pages/_profile.scss';
+@import './sass/pages/_product.scss';
+@import './sass/pages/_create-product.scss';
+@import './sass/pages/_create-category.scss';
+@import './sass/pages/_detail-product.scss';
